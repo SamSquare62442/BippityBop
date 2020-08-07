@@ -1,0 +1,11 @@
+{
+    "python.pythonPath": "f:\\Samin\\Programming\\BippitiBop\\BippityBop\\Scripts\\python.exe",
+    "python.formatting.provider": "black",
+    "code-runner.clearPreviousOutput": true,
+    "code-runner.runInTerminal": true,
+    "code-runner.showExecutionMessage": false,
+    "code-runner.executorMap": {
+        "python" : "$pythonPath -u $fullFileName"
+    },
+
+}
