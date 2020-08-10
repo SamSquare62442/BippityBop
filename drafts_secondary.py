@@ -14,8 +14,17 @@ class Ranger:
         return current
 
 nums = Ranger(1,10)
-for each in nums:
-    print(each)
+print(next(nums))
+print(next(nums))
+print(next(nums))
+print(next(nums))
+print(next(nums))
+print(next(nums))
+print(next(nums))
+print(next(nums))
+print(next(nums))
+print(next(nums))
+
 
 
 
