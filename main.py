@@ -14,7 +14,7 @@ if primary_input == "y":
     print("Made by SamSquare")
 
 else:
-    print("Made by SamSquare")
+    print("Yeet!have a good day!")
 
 
 
