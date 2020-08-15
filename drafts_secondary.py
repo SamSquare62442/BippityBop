@@ -1,31 +1,10 @@
-class Ranger:
-    def __init__(self,start,end):
-        self.start = start
-        self.end = end
-    
-    def __iter__(self):
-        return self
-    
-    def __next__(self):
-        if self.start >= self.end:
-            raise StopIteration
-        current = self.start
-        self.start += 1
-        return current
+import itertools
+string = input("Enter the word : ")
 
-nums = Ranger(1,10)
-print(next(nums))
-print(next(nums))
-print(next(nums))
-print(next(nums))
-print(next(nums))
-print(next(nums))
-print(next(nums))
-print(next(nums))
-print(next(nums))
-print(next(nums))
+result = list(itertools.permutations(string))
 
 
 
-
-
+for x,item in enumerate(result):
+    final_prod = "".join(item)
+    print("(",x,")",final_prod)
