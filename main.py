@@ -8,21 +8,23 @@ primary_input = primary_input.lower()
 
 if primary_input == "y":
     result = list(itertools.permutations(primary_string))
-
+    total_output = []
     for x,item in enumerate(result):
         final_prod = "".join(item)
         print(x,".",final_prod)
-    print("Made by SamSquare")
+        total_output.append(final_prod)
 
 else:
-    print("Yeet!have a good day!")
+    print("Ok!Got it!")
 
+saving_prompt = input("Do you want to save the output from the program?(y/n) : ")
+saving_prompt = saving_prompt.lower()
 
+if saving_prompt == "y":
+    with open("Output.txt","w",encoding="utf-8") as file:
+        file.writelines(str(total_output))
+    print("\nHave a good day!")
 
-
-
-
-
-
-
-
+else:
+    print("Ok!Have a good day!")
+    
